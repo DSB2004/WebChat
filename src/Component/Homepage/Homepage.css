@@ -1,0 +1,102 @@
+#Home {
+    margin: auto;
+    height: auto;
+    width: 95%;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.505);
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    margin-top: 50px;
+}
+
+#Home_heading {
+    font-family: 'Satisfy', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+
+#Home_content {
+    font-family: 'Satisfy', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    width: 80%;
+    font-size: 30px;
+}
+
+#Typewriter {
+    font-family: 'Satisfy', sans-serif;
+    margin: 50px 0px;
+    text-align: center;
+    width: 80%;
+    font-size: 30px;
+    min-height: 50px;
+}
+
+@media only screen and (max-width:1000px) {
+    #Home_heading {
+        font-size: 50px;
+    }
+
+    #Home_content {
+
+        font-size: 25px;
+    }
+
+    #Typewriter {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:700px) {
+    #Home_heading {
+        font-size: 40px;
+    }
+
+    #Home_content {
+
+        font-size: 22px;
+    }
+
+    #Typewriter {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    #Home_heading {
+        font-size: 30px;
+    }
+
+    #Home_content {
+
+        font-size: 20px;
+    }
+
+    #Typewriter {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:300px) {
+    #Home_heading {
+        font-size: 20px;
+    }
+
+    #Home_content {
+
+        font-size: 15px;
+    }
+
+    #Typewriter {
+        font-size: 15px;
+    }
+
+}

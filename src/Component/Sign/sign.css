@@ -1,0 +1,172 @@
+#sign_div {
+    border: 2px solid red;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+#sign {
+    width: auto;
+    max-width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    z-index: 1;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#sign_head {
+    font-family: 'Satisfy', sans-serif;
+    margin: 30px 0px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#head_msg {
+    padding: 0px;
+    margin: 5px;
+}
+
+.SignInput {
+    font-size: 15px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 20px;
+    width: 250px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.sign_btn {
+    margin: 10px 0px;
+    width: 200px;
+}
+
+#submit_btn {
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bolder;
+    margin: 15px 0px;
+    color: white;
+    background-color: #f79400;
+    border-radius: 0px;
+    transition: all 1s ease-in-out;
+}
+
+#submit_btn:hover {
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+input::placeholder {
+    color: rgb(67, 67, 67);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#loading {
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    animation: rotate 1s linear infinite;
+}
+
+#error_msg {
+    height: 10px;
+    width: auto;
+    padding: 0px;
+    margin: auto 5px;
+}
+
+#option_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#other_option {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#option_head {
+    margin-top: 0px;
+}
+
+#google {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 7px;
+    margin: 5px;
+    width: 250px;
+    height: 20px;
+    color: white;
+    background-color: #f79400;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#google:hover {
+    cursor: pointer;
+    font-weight: 900;
+}
+
+#alert_bar {
+    margin-top: 10px;
+}
+
+#alert_bar:hover {
+   font-weight: bold;
+}
+
+@media only screen and (max-width:1000px) {
+    #sign_head {
+        font-size: 20px;
+    }
+
+    #sign {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    #sign {
+        width: 250px;
+    }
+
+    .SignInput {
+        font-size: 15px;
+        margin: 5px 0px;
+        border-radius: 5px;
+        padding: 5px;
+        padding-left: 20px;
+        width: 200px;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    .other_div {
+        width: 200px;
+    }
+}

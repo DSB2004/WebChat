@@ -1,0 +1,164 @@
+#header {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    opacity: 1;
+    margin: auto;
+    height: auto;
+    backdrop-filter: blur(10px);
+    padding: 10px 0px;
+}
+
+#logo {
+    font-size: 60px;
+    color: white;
+    margin-left: 20px;
+}
+
+#head_name {
+    font-size: 40px;
+    color: white;
+    font-family: 'Satisfy', sans-serif;
+    margin: 0px;
+    margin-left: 10px;
+    padding: 0px;
+
+}
+
+#nav_div {
+    width: fit-content;
+    margin-left: auto;
+    display: flex;
+    z-index: 5;
+    margin-right: 10px;
+}
+
+.menubtn {
+    display: none;
+    font-size: 30px;
+    color: white;
+    margin-right: 15px;
+    margin-left: auto;
+}
+
+.main_nav {
+    color: white;
+    margin: 0px 10px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Satisfy', sans-serif;
+    transition: all 100ms ease-in-out;
+    border-radius: 20px;
+}
+
+.main_nav:hover {
+    color: rgb(169, 169, 169);
+    cursor: pointer
+}
+
+#dropmenu {
+    display: none;
+}
+
+#user_div {
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+#User_pic {
+    width: 40px;
+    height: 40px;
+}
+
+#Google_pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width:1400px) {
+    #user_div {
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    #logo {
+        font-size: 40px;
+    }
+
+    #head_name {
+        font-size: 25px;
+    }
+
+    .main_nav {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .menubtn {
+        display: block;
+    }
+
+    #dropmenu {
+        margin: 0px;
+        flex-direction: column;
+        position: absolute;
+        top: -5px;
+        left: 0px;
+        width: 100%;
+        display: none;
+        height: 0px;
+        padding-top: 30px;
+        /* border: 2px solid white; */
+        justify-content: top;
+        align-items: center;
+        z-index: 2;
+        opacity: 0;
+        background-color: black;
+        transition: all 200ms ease-in-out;
+    }
+
+    #logo {
+        margin-left: 10px;
+    }
+
+    #drop_head {
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+        padding: 5px;
+
+    }
+
+    #drop_div {
+        padding-top: 30px;
+        width: fit-content;
+        display: flex;
+        z-index: 2;
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+    #nav_div {
+        display: none;
+    }
+
+    .main_nav {
+        font-size: 25px;
+    }
+
+    #logo {
+        font-size: 35px;
+    }
+
+    #head_name {
+        font-size: 25px;
+    }
+
+}

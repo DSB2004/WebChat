@@ -1,0 +1,258 @@
+#heading {
+    position: relative;
+    height: auto;
+    padding: 0px;
+    margin: 5px;
+    padding-left: 10px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#user_pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    ;
+}
+
+#receiver_name {
+    font-size: 18px;
+    margin: 5px;
+    width: fit-content
+}
+
+#receiver_email {
+    font-size: 12px;
+    margin: 5px;
+    padding-left: 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#status_icon {
+    color: rgb(0, 237, 0);
+    border-radius: 50px;
+    border: transparent;
+    margin-left: 10px;
+}
+
+#status {
+    font-size: 12px;
+    margin: 5px;
+    padding-left: 10px;
+    width: fit-content
+}
+
+#message_div {
+
+    border-top: 2px solid white;
+    height: 77%;
+    width: auto;
+    margin: 5px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.msg {
+    margin: 5px;
+    width: 100px;
+    width: fit-content;
+    max-width: 45%;
+    border: 2px solid rgba(255, 255, 255, 0.769);
+    border-radius: 10px;
+    padding: 5px;
+    height: auto;
+    overflow-wrap: break-word;
+}
+
+#user_msg {
+    margin-left: auto;
+}
+
+
+#frn_msg {
+    margin-right: auto;
+}
+
+#msg_content {
+    font-size: 15px;
+    margin: 0px;
+    color: white;
+    text-align: justify;
+    padding: 0px 10px;
+    white-space: normal;
+}
+
+#input_div {
+    /* margin-top: auto; */
+    width: 100%;
+    position: absolute;
+    bottom: 2px;
+    display: flex;
+    padding: 10px;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+}
+
+#message_input {
+    border: 2px solid rgb(255, 255, 255);
+    width: 60%;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+#message_input::placeholder {
+    color: rgba(255, 255, 255, 0.922);
+}
+
+#send {
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#message_loader {
+    font-weight: bold;
+    padding: 0px;
+    font-size: 12px;
+    animation: rotate 1s linear infinite;
+    color: white;
+    margin: 0px;
+}
+
+#tick {
+    margin: 0px;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 12px;
+    color: white;
+}
+
+#msg_status {
+    margin: 0px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+}
+
+#chat_option_div {
+    position: absolute;
+    right: 0px;
+    margin-left: auto;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat_inner_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 3px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+#chat_div {
+    border-radius: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 0px;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+#chat_option_btn {
+    border-radius: 100px;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    transition: all 200ms ease-in-out;
+}
+
+.chat_option {
+    font-size: 20px;
+    color: black;
+    margin: 0px 5px;
+}
+
+#delete_chat {
+    margin-right: 10px;
+}
+
+#block_display {
+    display: none;
+    width: fit-content;
+    border: 2px solid rgba(255, 255, 255, 0.708);
+    border-radius: 10px;
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+@media only screen and (max-width:800px) {
+
+
+    #message_input {
+        border: 2px solid rgb(255, 255, 255);
+        width: 75%;
+        padding-left: 10px;
+    }
+
+    #message_div {
+        /* height: auto; */
+        height: 80%;
+    }
+
+    #user_pic {
+        height: 30px;
+        width: 30px;
+    }
+
+    #receiver_name {
+        font-size: 15px;
+    }
+
+    #receiver_email {
+        font-size: 10px;
+    }
+
+
+    #block_display {
+        font-size: 15px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+}
